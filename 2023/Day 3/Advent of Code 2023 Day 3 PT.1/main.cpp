@@ -97,19 +97,19 @@ int main(){
 
     file.close();
     //                  THIS IS THE MASK OF 1's AND 0's 
-    // for (int i = 0; i < numofLines; i++)
-    // {
-    //     for (int j = 0; j < numofLines; j++)
-    //     {
-    //         if (linesSchema[i][j] == 1)
-    //         {
-    //             printf("\033[42m%d\033[0m", linesSchema[i][j]);
-    //         }else{
-    //         cout << linesSchema[i][j];
-    //         }
-    //     }
-    //     cout << '\n';
-    // }
+    for (int i = 0; i < numofLines; i++)
+    {
+        for (int j = 0; j < numofLines; j++)
+        {
+            if (linesSchema[i][j] == 1)
+            {
+                printf("\033[42m%d\033[0m", linesSchema[i][j]);
+            }else{
+            cout << linesSchema[i][j];
+            }
+        }
+        cout << '\n';
+    }
     long tot =  getSum(linesSchema , lines, numofLines);
     cout << "\nTHE FINAL TOTAL IS: " << tot<< endl;
 // ------------------------------------------------------------
@@ -211,5 +211,4 @@ int getOffSet(string numBlock){
     return numBlock.length();
     
 }
-
 
