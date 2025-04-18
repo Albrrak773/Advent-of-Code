@@ -11,7 +11,7 @@ def main():
     cards_reference = get_refernce(cards)
 
     scratch_cards = []
-    Stack = []
+    Stack = [] # this is a comment to test commiting with no message to see if I will be entered into a text editor
     scratch_cards.append(cards[0][0])
 
     for card in cards[1::]:
